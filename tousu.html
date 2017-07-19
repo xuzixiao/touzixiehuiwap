@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,user-scalable=0" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>我要投诉</title>
+<link rel="stylesheet" href="css/wap-style.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+<link rel="stylesheet" type="text/css" href="css/media-style.css"/>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js" ></script>
+<script type="text/javascript" src="js/swiper.jquery.js" ></script>
+<script type="text/javascript" src="js/wap.js" ></script>
+</head>
+
+<body>
+
+<header class="tzxh-head">
+	<a href="article.html" class="icon-font left">&#xe604;</a>
+	我要投诉
+	<a href="" class="icon-font right">&#xe85f;</a>
+</header>
+
+<section class="liuyan-box toudi-box">
+	
+	
+	
+	<div class="liuyantext-box">
+		<p>投诉对象：<span>陕西某证券公司1亿-10亿元寻工业等项目合作</span></p>
+		<textarea name="" rows="4" cols="" id="liuyantext"  maxlength="300" placeholder="填写投诉理由" ></textarea>
+	</div>
+	
+	 
+	
+	<div class="upload-pz">
+		<p>
+		<span>投诉凭证:</span>	
+		<input type="file" value="上传凭证">
+		</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="fabu">
+		<button class="liuyan-fabu">提交投诉</button>
+	</div>
+	
+	
+	
+</section> 
+
+
+<footer class="footer">
+	<section class="foot-p"><a href="">触屏版</a><a href="">电脑版</a><a href="">关于我们</a></section>
+	<section class="foot-p">
+		<p>copyright 2017 ICP经营许可证：（填写备案信息）</p>
+		<p>版权所有：北京唐人街（填写版权信息）</p>
+		<p>地址：北京唐人街（填写地址信息）</p>
+		<div class="foot-tel">客服电话：<a href="tel:010-68309961">010-68309961</a><a href="tel:010-68309963">010-68309963</a></div>
+		
+	</section>
+	
+</footer>
+
+</body>
+<script>
+	$(document).ready(function(){		
+		$("#liuyantext").keyup(function(){
+			var str=$("#liuyantext").val();
+			var strlen=str.length
+			$("#textnum").text(300-strlen);			
+		})
+		$("#upload-file").change(function(){
+			
+			var uploadfile=$(this).val();
+			alert("测试上传地址为："+uploadfile)
+		})
+		
+		
+		
+		
+	})
+	
+	
+</script>
+</html>

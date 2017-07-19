@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,user-scalable=0" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>投递项目</title>
+<link rel="stylesheet" href="css/wap-style.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+<link rel="stylesheet" type="text/css" href="css/media-style.css"/>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js" ></script>
+<script type="text/javascript" src="js/swiper.jquery.js" ></script>
+<script type="text/javascript" src="js/wap.js" ></script>
+</head>
+
+<body>
+
+<header class="tzxh-head">
+	<a href="index.html" class="icon-font left">&#xe604;</a>
+	投递项目
+	<a href="" class="icon-font right">&#xe85f;</a>
+</header>
+
+<section class="liuyan-box toudi-box">
+	
+	<!--项目标题-->
+	<div class="liuyan-tel td-xm-name">
+		<input type="text" class="tel-num" width="100%" placeholder="项目名称"> 
+	</div>
+	
+	
+	
+	<div class="liuyantext-box">
+		<textarea name="" rows="4" cols="" id="liuyantext"  maxlength="300" placeholder="项目描述：请简单介绍项目情况、项目优势及融资用途。字
+数20-500之间。" ></textarea>
+		<p>您还可以输入<span id="textnum">300</span>个字符</p>
+	</div>
+	
+	 
+	
+	<div class="save-file">
+		<input type="file" class="tel-num" id="upload-file" width="100%" placeholder="上传商业计划书"> 
+		<p>为了提升资金方的回复率，请上传商业计划书</p>
+	</div>
+	
+	<div class="liuyan-tel toudi-user-name">
+		<input type="text" class="tel-num" width="100%" placeholder="联系人姓名"> 
+	</div>
+	
+	
+	
+	<div class="fabu">
+		<button class="liuyan-fabu">确认投递</button>
+	</div>
+	
+	
+	
+</section> 
+
+
+<footer class="footer">
+	<section class="foot-p"><a href="">触屏版</a><a href="">电脑版</a><a href="">关于我们</a></section>
+	<section class="foot-p">
+		<p>copyright 2017 ICP经营许可证：（填写备案信息）</p>
+		<p>版权所有：北京唐人街（填写版权信息）</p>
+		<p>地址：北京唐人街（填写地址信息）</p>
+		<div class="foot-tel">客服电话：<a href="tel:010-68309961">010-68309961</a><a href="tel:010-68309963">010-68309963</a></div>
+		
+	</section>
+	
+</footer>
+
+</body>
+<script>
+	$(document).ready(function(){		
+		$("#liuyantext").keyup(function(){
+			var str=$("#liuyantext").val();
+			var strlen=str.length
+			$("#textnum").text(300-strlen);			
+		})
+		$("#upload-file").change(function(){
+			
+			var uploadfile=$(this).val();
+			alert("测试上传地址为："+uploadfile)
+		})
+		
+		
+		
+		
+	})
+	
+	
+</script>
+</html>
